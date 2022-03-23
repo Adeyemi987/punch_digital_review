@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalendarService.API</name>
+    </assembly>
+    <members>
+        <member name="M:CalendarService.API.Controllers.CalendarController.AddEventAsync(CalendarService.Core.Models.DTOs.EventDTO)">
+             <summary>
+             Add a new Event.
+             </summary>
+            <response code="201">Returned for event added successfuly</response>
+            
+        </member>
+        <member name="M:CalendarService.API.Controllers.CalendarController.DeleteEventAsync(System.Int64)">
+             <summary>
+             Delete an existing event.
+             </summary>
+            <response code="204">Returned when event deleted successfully</response>
+            <response code="404">Returned when event not found</response>
+            
+        </member>
+        <member name="M:CalendarService.API.Controllers.CalendarController.EditEventAsync(System.Int64,CalendarService.Core.Models.DTOs.EventDTO)">
+             <summary>
+             Edit an existing event.
+             </summary>
+            <response code="204">Returned when event edited successfully</response>
+            <response code="400">Returned when id in request route doesnt match request body</response>
+            <response code="404">Returned when event not found</response>
+            
+        </member>
+        <member name="M:CalendarService.API.Controllers.CalendarController.GetAllEventsAsync">
+             <summary>
+             Get all events.
+             </summary>
+            <response code="200">Returned all events or empty array</response>
+            
+        </member>
+        <member name="M:CalendarService.API.Controllers.CalendarController.GetAllEventsByQueryStrings(System.String,System.Int64,System.String,System.String)">
+             <summary>
+             Get events by query strings Options: eventOrganizer, id, location, name .
+             </summary>
+            <response code="200">Returned all events by organizer, id, location, name as specified in query string or empty array</response>
+            
+        </member>
+        <member name="M:CalendarService.API.Controllers.CalendarController.GetSortedEventsAsync">
+             <summary>
+             Get all events sorted by time in descending order.
+             </summary>
+            <response code="200">Returned all events by organizer, id, location, name as specified in query string or empty array</response>
+            
+        </member>
+    </members>
+</doc>

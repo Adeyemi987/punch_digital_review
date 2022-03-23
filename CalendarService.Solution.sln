@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarService.API", "CalendarService.API\CalendarService.API.csproj", "{5D6FEE95-1CB0-4639-9115-E085AE441C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarService.Core", "CalendarService.Core\CalendarService.Core.csproj", "{3B35BA8F-01D2-46E1-94F3-7990598C90CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarService.Infrastructure", "CalendarService.Infrastructure\CalendarService.Infrastructure.csproj", "{8B5F9D9B-9878-427C-8C7C-9CCE9F0EABBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarService.Test", "CalendarService.Test\CalendarService.Test.csproj", "{89092287-EF06-44BE-BD8B-D9EE465E228E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D6FEE95-1CB0-4639-9115-E085AE441C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6FEE95-1CB0-4639-9115-E085AE441C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6FEE95-1CB0-4639-9115-E085AE441C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6FEE95-1CB0-4639-9115-E085AE441C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B35BA8F-01D2-46E1-94F3-7990598C90CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B35BA8F-01D2-46E1-94F3-7990598C90CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B35BA8F-01D2-46E1-94F3-7990598C90CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B35BA8F-01D2-46E1-94F3-7990598C90CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B5F9D9B-9878-427C-8C7C-9CCE9F0EABBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B5F9D9B-9878-427C-8C7C-9CCE9F0EABBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B5F9D9B-9878-427C-8C7C-9CCE9F0EABBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B5F9D9B-9878-427C-8C7C-9CCE9F0EABBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89092287-EF06-44BE-BD8B-D9EE465E228E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89092287-EF06-44BE-BD8B-D9EE465E228E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89092287-EF06-44BE-BD8B-D9EE465E228E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89092287-EF06-44BE-BD8B-D9EE465E228E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50E9E974-32FF-4B71-B2DA-19B988331563}
+	EndGlobalSection
+EndGlobal

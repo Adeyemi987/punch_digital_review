@@ -1,0 +1,19 @@
+name: event-calendar
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setting event-calendar
+      env:
+        HEROKU_API_KEY: aa477804-5fe5-467b-aa0c-d44673f98d13
+        APP_NAME: event-calender-api
+      run: |
+        docker build -t calendarservice.api .
+        docker tag calendarservice.api registry.heroku.com
+        docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+        heroku container:push web -a $APP_NAME
+        heroku container:release web -a $APP_NAME
